@@ -1,0 +1,188 @@
+@keyframes wobble-hor-bottom {
+  0%,
+  to {
+    transform: translateX(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+.bottomConfettiChild {
+  width: 178.5px;
+  position: relative;
+  height: 176.7px;
+}
+.bottomConfettiItem {
+  width: 166.2px;
+  position: relative;
+  height: 164.6px;
+}
+.bottomConfetti {
+  position: absolute;
+  top: 584px;
+  left: 143.9px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 922px;
+}
+.topConfettiChild,
+.topConfettiItem {
+  width: 586.5px;
+  height: 290px;
+}
+.topConfettiItem {
+  position: relative;
+}
+.topConfetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1554.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+.img1260Edited1,
+.img9794Edited1 {
+  width: 143px;
+  position: relative;
+  max-height: 100%;
+  object-fit: contain;
+}
+.img9794Edited1 {
+  width: 89px;
+  object-fit: cover;
+}
+.img1260Edited1Parent {
+  left: 0;
+  width: 232px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameGroup,
+.img1260Edited1Parent,
+.su1Icon {
+  position: absolute;
+  top: 0;
+}
+.su1Icon {
+  left: 274px;
+  width: 306px;
+  height: 112px;
+  object-fit: cover;
+}
+.frameGroup {
+  left: 102px;
+  width: 580px;
+  height: 145px;
+}
+.bEf6749889b06Ccd41906f90aIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 133px;
+  height: 287px;
+  object-fit: cover;
+}
+.wrapper {
+  position: absolute;
+  top: 174px;
+  left: 213px;
+  background-color: var(--color-bisque);
+  width: 258px;
+  height: 113px;
+}
+.img0310Edited1 {
+  position: absolute;
+  top: 92px;
+  left: 551px;
+  width: 132px;
+  height: 195px;
+  object-fit: cover;
+}
+.bEf6749889b06Ccd41906f90aParent,
+.frameParent {
+  position: absolute;
+  top: 47px;
+  left: 0;
+  width: 683px;
+  height: 287px;
+}
+.frameParent {
+  top: 0;
+  height: 334px;
+}
+.seattleIsGetting {
+  position: absolute;
+  top: 178.5px;
+  left: 44px;
+  font-weight: 500;
+  display: inline-block;
+  width: 578px;
+}
+.groupParent {
+  position: absolute;
+  top: -1px;
+  left: 38px;
+  width: 683px;
+  height: 334px;
+}
+.backCard,
+.backCardInner {
+  position: absolute;
+  width: 742px;
+  height: 379px;
+}
+.backCardInner {
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 15px var(--color-firebrick) inset;
+  border-radius: var(--br-30);
+  background-color: var(--color-bisque);
+}
+.backCard {
+  top: 265px;
+  left: 406px;
+}
+.bottomConfettiParent {
+  position: absolute;
+  top: -131px;
+  left: -178px;
+  width: 1554.5px;
+  height: 760.7px;
+}
+.baddie {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-firebrick);
+  height: 630px;
+  overflow: hidden;
+  opacity: 1;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--font-size-20);
+  color: var(--color-firebrick);
+  font-family: var(--font-montserrat);
+}
+.baddie.animate {
+  animation: 2s ease 0s 1 normal forwards wobble-hor-bottom;
+}

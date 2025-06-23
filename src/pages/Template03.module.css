@@ -1,0 +1,89 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hey,
+.sarah {
+  align-self: stretch;
+  position: relative;
+}
+.hey {
+  font-size: 27.2px;
+  opacity: 0.7;
+}
+.sarah {
+  display: inline-block;
+  height: 44px;
+  flex-shrink: 0;
+}
+.areYouReady,
+.howsItBeing {
+  position: relative;
+  font-weight: 500;
+  font-family: var(--font-oswald);
+}
+.howsItBeing {
+  color: var(--color-firebrick);
+}
+.areYouReady {
+  align-self: stretch;
+}
+.heyParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.frameChild,
+.frameItem {
+  width: 143px;
+  padding: 9px 28px;
+  box-sizing: border-box;
+}
+.frameItem {
+  padding: 9px 23px;
+}
+.frameGroup {
+  position: absolute;
+  top: 403px;
+  left: 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+.frameParent {
+  width: 390px;
+  position: relative;
+  height: 474px;
+}
+.template03 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 43px 404px;
+  box-sizing: border-box;
+  opacity: 0;
+  text-align: center;
+  font-size: 43.3px;
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}
+.template03.animate {
+  animation: 2s ease-in 1s 1 normal forwards fade-in;
+}

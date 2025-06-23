@@ -1,0 +1,130 @@
+@keyframes roll-in-left {
+  0% {
+    transform: translateX(-50px) rotate(-540deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 586px;
+  height: 320px;
+}
+.frameItem {
+  width: 586.5px;
+  position: relative;
+  height: 290px;
+}
+.clickTheCake {
+  width: 403px;
+  position: relative;
+  display: inline-block;
+}
+.groupParent {
+  position: absolute;
+  top: 0;
+  left: 968px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.audio,
+.audioParent {
+  position: absolute;
+  width: 398px;
+  height: 97px;
+}
+.audio {
+  top: 0;
+  left: 0;
+  background-color: var(--color-firebrick);
+}
+.audioParent {
+  top: 199px;
+  left: 570px;
+}
+.frameGroup {
+  width: 1554.5px;
+  position: relative;
+  height: 320px;
+}
+.happyBirthday {
+  align-self: stretch;
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  height: 87px;
+  flex-shrink: 0;
+}
+.toMyFavoriteContainer {
+  position: relative;
+  font-size: var(--font-size-36);
+  letter-spacing: 0.2em;
+  font-family: var(--font-montserrat);
+}
+.happyBirthdayParent {
+  width: 669px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  font-size: 74.2px;
+  font-family: var(--font-oswald);
+}
+.frameInner {
+  width: 178.5px;
+  position: relative;
+  height: 176.7px;
+}
+.frameIcon {
+  width: 207.8px;
+  height: 217.1px;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.groupIcon {
+  width: 166.2px;
+  position: relative;
+  height: 164.6px;
+}
+.groupContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 350px;
+}
+.frameParent {
+  position: absolute;
+  top: -131px;
+  left: -178px;
+  width: 1554.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.template04 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-firebrick);
+  height: 630px;
+  overflow: hidden;
+  opacity: 0;
+  text-align: center;
+  font-size: 25px;
+  color: var(--color-mistyrose);
+  font-family: var(--font-montserrat);
+}
+.template04.animate {
+  animation: 2s ease 0s 1 normal forwards roll-in-left;
+}

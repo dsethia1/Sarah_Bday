@@ -1,0 +1,36 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.blankLine {
+  margin: 0;
+}
+.template00,
+.text {
+  position: relative;
+}
+.template00 {
+  width: 100%;
+  background-color: var(--color-white);
+  height: 630px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 255px 568px;
+  box-sizing: border-box;
+  opacity: 0;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-36);
+  color: var(--color-black);
+  font-family: var(--font-nunito);
+}
+.template00.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in;
+}

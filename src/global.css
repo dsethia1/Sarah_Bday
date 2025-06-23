@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* Color */
+  --color-mistyrose: #f7e4df;
+  --color-bisque: #fae0c9;
+  --color-firebrick: #aa0000;
+  --color-black: #000;
+  --color-white: #fff;
+
+  /* BorderRadius */
+  --br-30: 30px;
+
+  /* Font */
+  --font-nunito: Nunito;
+  --font-oswald: Oswald;
+  --font-montserrat: Montserrat;
+
+  /* FontSize */
+  --font-size-20: 20px;
+  --font-size-36: 36px;
+}

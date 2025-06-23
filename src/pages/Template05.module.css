@@ -1,0 +1,114 @@
+@keyframes wobble-hor-bottom {
+  0%,
+  to {
+    transform: translateX(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+.bottomConfettiChild {
+  width: 178.5px;
+  position: relative;
+  height: 176.7px;
+}
+.bottomConfettiItem {
+  width: 166.2px;
+  position: relative;
+  height: 164.6px;
+}
+.bottomConfetti {
+  position: absolute;
+  top: 584px;
+  left: 143.9px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 922px;
+}
+.topConfettiChild,
+.topConfettiItem {
+  width: 586.5px;
+  height: 290px;
+}
+.topConfettiItem {
+  position: relative;
+}
+.topConfetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1554.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+.dearSarah {
+  margin: 0;
+}
+.iHopeYou {
+  margin: 0;
+  font-size: 18px;
+}
+.dearSarahIContainer {
+  width: 578px;
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frontCard {
+  position: absolute;
+  top: 265px;
+  left: 406px;
+  box-shadow: 0 4px 15px var(--color-firebrick) inset;
+  border-radius: var(--br-30);
+  background-color: var(--color-bisque);
+  width: 742px;
+  height: 379px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 26px;
+  box-sizing: border-box;
+}
+.bottomConfettiParent {
+  position: absolute;
+  top: -131px;
+  left: -178px;
+  width: 1554.5px;
+  height: 760.7px;
+}
+.note {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-firebrick);
+  height: 630px;
+  overflow: hidden;
+  opacity: 1;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-20);
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}
+.note.animate {
+  animation: 2s ease 0s 1 normal forwards wobble-hor-bottom;
+}
